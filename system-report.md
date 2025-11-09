@@ -13,10 +13,10 @@
 ### 1.a. OS Version
 **INPUT:** `cat /etc/os-release`
 
-**NOTES:** `cat` displays file contents. `/etc/os-release` stores OS info.
+**NOTES:** `cat` displays file contents. `/etc/os-release` file stores OS info.
 
 **RESULT:** VERSION="24.04.3 LTS (Noble Numbat)"
-
+![alt text](1.png)
 ---
 
 ### 1.b. Current Shell
@@ -25,7 +25,7 @@
 **NOTES:** `echo` outputs variable value. `$SHELL` stores current shell path.
 
 **RESULT:** Using Bash shell at /bin/bash
-
+![alt text](2.png)
 ---
 
 ### 1.c. Node Binary Path
@@ -34,7 +34,7 @@
 **NOTES:** `which` shows executable location.
 
 **RESULT:** /home/chandramohan/.nvm/versions/node/v24.11.0/bin/node
-
+![alt text](3.png)
 ---
 
 ### 1.d. NPM Global Installation Path
@@ -43,7 +43,7 @@
 **NOTES:** `npm root -g` prints global packages directory.
 
 **RESULT:** /home/chandramohan/.nvm/versions/node/v24.11.0/lib/node_modules
-
+![alt text](4.png)
 ---
 
 ### 1.e. PATH Entries with Node or NPM
@@ -57,7 +57,8 @@ done
 **NOTES:** Loop breaks $PATH into directories and lists those containing node/npm executables.
 
 **RESULT:** Main active version: /home/chandramohan/.nvm/versions/node/v24.11.0/bin/
-
+![alt text](5.png)
+![alt text](9.png)
 ---
 
 ## 2. Node.js and NVM
@@ -75,7 +76,7 @@ default -> lts/* (-> v24.11.0)
 **NOTES:** `nvm ls` lists all installed Node.js versions and shows active one.
 
 **RESULT:** Active: v24.11.0 (LTS Krypton), Installed: v24.11.0 and v25.1.0
-
+![alt text](6.png)
 ---
 
 ### 2.b. Verify NVM Installation
@@ -86,7 +87,8 @@ default -> lts/* (-> v24.11.0)
 **NOTES:** Confirms NVM is installed and accessible.
 
 **RESULT:** NVM is working correctly.
-
+![alt text](7.png)
+![alt text](8.png)
 ---
 
 ## 3. introspect.js Script
@@ -110,7 +112,7 @@ console.log(`Node Path: ${process.execPath}`);
 **Save:** CTRL+O → Enter → CTRL+X
 
 **Run:** `node introspect.js`
-
+![alt text](10.png)
 ---
 
 ## 4. STREAM vs BUFFER Exercise
